@@ -1,0 +1,167 @@
+{
+  "chartData": [
+    {
+      "id": 1,
+      "name": "Nº DE RNC, RNM E RNB PENDENTES",
+      "description": "Somatória de documentos abertos para a área",
+      "direction":"baixo",
+      "responsable":"Bravim",
+      "level": 1,
+      "meta_inf": 0,
+      "meta":0,
+      "unidade_medida": "Unidade",
+      "area": "378",
+      "pilar":"Security",
+      "data": [
+        {
+        "id":1,
+        "kpi_id": 1,
+        "data":"04/mai",
+        "valor_1":"0",
+        "valor_2":null,
+        "valor_3":null,
+        "valor_4":null
+        },{
+          "id":1,
+          "kpi_id": 1,
+          "data":"04/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+          },
+          {
+          "id":2,
+          "kpi_id": 1,
+          "data":"05/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+          },
+          {
+            "id":3,
+            "kpi_id": 1,
+            "data":"06/mai",
+            "valor_1":"0",
+            "valor_2":null,
+            "valor_3":null,
+            "valor_4":null
+          },
+          {
+            "id":4,
+            "kpi_id": 1,
+            "data":"07/mai",
+            "valor_1":"0",
+            "valor_2":null,
+            "valor_3":null,
+            "valor_4":null
+          },
+          {
+            "id":5,
+            "kpi_id": 1,
+            "data":"08/mai",
+            "valor_1":"0",
+            "valor_2":null,
+            "valor_3":null,
+            "valor_4":null
+          }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Escapes",
+      "description": "Somatória das notas CD e FO não contidas na área (origem Produção)",
+      "direction":"baixo",
+      "responsable":"Bravim",
+      "level": 1,
+      "meta_inf": 0,
+      "meta":0,
+      "unidade_medida": "Unidade",
+      "area": "378",
+      "pilar":"Quality",
+      "data": [
+        {
+          "id":7,
+          "kpi_id": 2,
+          "data":"04/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        },
+        {
+          "id":8,
+          "kpi_id": 2,
+          "data":"05/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        },
+        {
+          "id":9,
+          "kpi_id": 2,
+          "data":"06/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        },
+        {
+          "id":10,
+          "kpi_id": 2,
+          "data":"07/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        },
+        {
+          "id":11,
+          "kpi_id": 2,
+          "data":"08/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "OTD Peças Primárias",
+      "description": "(Qtde de PNs com DANE no passado e estoque zero / Qtde de PNs com demanda)",
+      "direction":"Maior",
+      "responsable":"Bravim",
+      "level": 1,
+      "meta_inf": 0,
+      "meta":100,
+      "area": "378",
+      "pilar":"Delivery",
+      "data":[
+        {
+          "id":12,
+          "kpi_id": 3,
+          "data":"04/mai",
+          "valor_1":"0",
+          "valor_2":null,
+          "valor_3":null,
+          "valor_4":null
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Absenteísmo",
+      "description": "Σ Horas Faltas / Σ Horas Previstas (retirar as hs INSS e licença maternidade / paternidade)",
+      "direction":"baixo",
+      "responsable":"Bravim",
+      "level": 1,
+      "meta_inf": 0,
+      "meta":0,
+      "area": "378",
+      "pilar":"Coast"
+    }
+  ]
+}
