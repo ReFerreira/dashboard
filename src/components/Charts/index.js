@@ -13,6 +13,7 @@ export default class Charts extends Component {
     dados: {},
     labels: [],
     datasets: [],
+    meta: [],
     loading: true,
   };
 
@@ -21,22 +22,25 @@ export default class Charts extends Component {
     const { data } = response;
     const datas = [];
     const valores = [];
+    const meta = [];
 
     data.map((d) => {
       datas.push(d.data);
       valores.push(d.valor_1);
+      meta.push(d.meta);
     });
 
     this.setState({
       dados: data,
       labels: datas,
       datasets: valores,
+      meta,
       loading: false,
     });
   }
 
   render() {
-    const { labels, datasets, loading } = this.state;
+    const { labels, datasets, loading, meta } = this.state;
 
     if (loading) {
       return <Loading> Carregando... </Loading>;
@@ -48,8 +52,14 @@ export default class Charts extends Component {
             labels,
             datasets: [
               {
+                label: 'Segurança',
                 data: datasets,
                 backgroundColor: '#ffb3b3',
+              },
+              {
+                label: 'Meta 0',
+                data: meta,
+                backgroundColor: 'rgb(153, 255, 153)',
               },
             ],
           }}
@@ -57,12 +67,14 @@ export default class Charts extends Component {
             legend: {
               display: true,
               position: 'bottom',
+              text: 'meta 0',
             },
             scales: {
               yAxes: [
                 {
                   ticks: {
                     beginAtZero: true,
+                    suggestedMax: 10,
                   },
                 },
               ],
